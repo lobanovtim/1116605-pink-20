@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Тимофей Лобанов](https://up.htmlacademy.ru/adaptive/20/user/1116605).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 

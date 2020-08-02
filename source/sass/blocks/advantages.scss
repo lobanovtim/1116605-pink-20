@@ -1,0 +1,29 @@
+.advantages__slogan {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $black;
+  background-color: $white;
+}
+
+.advantages__list {
+margin: 0;
+background-color: $white-grey;
+}
+
+.advantages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+
+.advantages__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $grey;
+}

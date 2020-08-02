@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Мобильное приложение "Pink"</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -13,28 +14,31 @@
         />
       </a>
       <nav class="main-nav">
-        <button class="main-nav__open main-nav__close" type="button">
+        <button
+          class="main-nav__button main-nav__button--open main-nav__button--close"
+          type="button"
+        >
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
+              <a class="site-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
+              <a class="site-list__link" href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
@@ -43,22 +47,31 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">«Pink» — взгляни на жизнь ярче</h1>
       <section class="intro">
-        <h2 class="visually-hidden">Скачать приложение «Pink»</h2>
         <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-        <a class="button" href="https://www.apple.com/ru/ios/app-store/"
+        <h2 class="visually-hidden">Скачать приложение «Pink»</h2>
+        <a class="intro__button" href="https://www.apple.com/ru/ios/app-store/"
           >Скачать приложение</a
         >
         <ul class="intro__download-application-list">
           <li class="intro__download-application-item">
-            <a href="https://www.apple.com/ru/ios/app-store/">AppStore</a>
+            <a
+              class="intro__download-application-link--apple visually-hidden"
+              href="https://www.apple.com/ru/ios/app-store/"
+              >AppStore</a
+            >
           </li>
           <li class="intro__download-application-item">
-            <a href="https://play.google.com/store/apps?hl=ru">GooglePlay</a>
+            <a
+              class="intro__download-application-link--android visually-hidden"
+              href="https://play.google.com/store/apps?hl=ru"
+              >GooglePlay</a
+            >
           </li>
           <li class="intro__download-application-item">
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows"
+            <a
+              class="intro__download-application-link--microsoft visually-hidden"
+              href="https://www.microsoft.com/ru-ru/store/apps/windows"
               >Windows</a
             >
           </li>
@@ -67,9 +80,10 @@
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
+      <h1 class="visually-hidden">«Pink» — взгляни на жизнь ярче</h1>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages-slogan">
+        <p class="advantages__slogan">
           Устали от серости мегаполиса?<br />Нам есть, что вам предложить!
         </p>
         <ul class="advantages__list">

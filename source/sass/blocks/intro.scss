@@ -1,59 +1,59 @@
 .intro {
-  background-color: $dark-grey;
-
-  .intro__button {
-    width: 280px;
-    height: 55px;
-    border: 3px solid $white;
-    box-sizing: border-box;
-    border-radius: 29px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    margin: 0;
-    padding: 21px 39px;
-    color: $white;
-  }
-}
-
-.intro__slogan {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 120%;
-  color: $white;
-  width: 320px;
-  height: 462px;
-  background-image: url("../../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-}
-
-.intro__download-application-list--apple {
-  width: 47px;
-  height: 56px;
-  background-image: url("../../../img/logo-apple.svg");
-  background-repeat: no-repeat;
-}
-
-.intro__download-application-list--android {
-  width: 43px;
-  height: 47px;
-  background-image: url("../../../img/logo-android.svg");
-  background-repeat: no-repeat;
-}
-
-.intro__download-application-list--microsoft {
-  width: 44px;
-  height: 41px;
-  background-image: url("../../../img/logo-microsoft.svg");
-  background-repeat: no-repeat;
-}
-
-.intro {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: $white;
+  background-color: $dark-grey;
+}
+
+.intro__button {
+  border: 3px solid $white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  padding: 21px 39px;
+  color: $white;
+  text-decoration: none;
+}
+
+.intro__slogan {
+  @include page-slogan;
+  margin: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__download-application-list {
+  list-style: none;
+}
+
+.intro__download-application-list {
+  padding: 0;
+  margin: 0;
+}
+
+.intro__download-application-link--apple {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+
+.intro__download-application-link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+}
+
+.intro__download-application-link--microsoft {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
 }

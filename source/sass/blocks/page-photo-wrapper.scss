@@ -1,13 +1,7 @@
-.page-form__wrapper {
+.page-photo-wrapper {
   width: 320px;
   height: 462px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $dark-grey;
-}
-
-.page-form__slogan {
-  @include page-slogan;
-  margin: 0;
-  padding: 0;
 }

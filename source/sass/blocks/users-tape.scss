@@ -1,0 +1,64 @@
+.users-tape {
+  background-color: $white
+}
+
+.users-tape__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.users-tape__item {
+  background-color: $white-grey;
+  margin: 0 0 20px 0;
+}
+
+.users-tape__link {
+  margin: 0;
+  padding: 0;
+}
+
+.users-tape__slogan {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  color: $black;
+}
+
+.users-tape__user {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: $black;
+}
+
+.users-tape__time-post {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  color: $grey;
+}
+
+.users-tape__comment {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.users-tape__like {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  color: $red;
+}

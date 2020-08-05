@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <title>Конкурс от "Pink"</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -13,28 +14,31 @@
         />
       </a>
       <nav class="main-nav">
-        <button class="main-nav__open main-nav__close" type="button">
+        <button
+          class="main-nav__button main-nav__button--open main-nav__button--close"
+          type="button"
+        >
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
+              <a class="site-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
+              <a class="site-list__link" href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
@@ -42,10 +46,12 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="form__slogan">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
+    <main class="page-form">
+      <div class="page-form__wrapper">
+        <h1 class="page-form__slogan">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
+      </div>
       <section class="form"></section>
     </main>
     <footer class="page-footer">

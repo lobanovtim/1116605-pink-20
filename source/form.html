@@ -7,23 +7,27 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+    <div class="page-header__wrapper"
+      <a class="page-header__logo">
         <img
-          src="https://via.placeholder.com/150x150"
-          alt="Мобильное приложение «Pink»"
+          class="page-header__logo--img"
+          src="../img/logo-pink-white-mobile.svg"
+          width="74px"
+          height="23px"
+          alt="Логотип приложения «Pink»"
         />
       </a>
+      <button
+        class="main-nav__button main-nav__button--open main-nav__button--close"
+        type="button"
+      >
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+    </div>
       <nav class="main-nav">
-        <button
-          class="main-nav__button main-nav__button--open main-nav__button--close"
-          type="button"
-        >
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">
+              <a class="site-list__link">
                 Главная
               </a>
             </li>
@@ -33,7 +37,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">
+              <a class="site-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
@@ -43,10 +47,9 @@
               </a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
-    <main class="page-form">
+    <main class="page-form container">
       <div class="page-form__wrapper">
         <h1 class="page-form__slogan">
           Конкурс на самое безбашенное путешествие с Пинк
@@ -54,9 +57,10 @@
       </div>
       <section class="form"></section>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
+    <footer class="page-footer container">
+      <a class="page-footer__link" href="index.html">
         <img
+          class="page-footer__logo"
           src="https://via.placeholder.com/150x150"
           alt="Мобильное приложение «Pink»"
         />

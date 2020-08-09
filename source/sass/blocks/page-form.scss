@@ -1,13 +1,27 @@
 .page-form__wrapper {
-  width: 320px;
-  height: 462px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-color: $dark-grey;
+  min-height: 400px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .page-form__slogan {
   @include page-slogan;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto 100px auto;
+  padding: 50px 0 0 0;
+  text-align: center;
+  width: 200px;
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

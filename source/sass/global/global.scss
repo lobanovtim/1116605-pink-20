@@ -1,9 +1,22 @@
 body {
+  min-height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
+  margin: 0;
+  color: $black;
+  background-color: $white;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding: 0 20px;
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

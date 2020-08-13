@@ -2,12 +2,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  @media (min-width: $mobile-width and $tablet-width) {
-  display: flex;
-  flex-direction: column;
-  }
-  @media (min-width: $desktop-width) {
+
+  @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -24,6 +25,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: $desktop-width) {
     margin-right: 79px;
   }

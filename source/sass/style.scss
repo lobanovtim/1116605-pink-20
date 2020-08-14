@@ -1,8 +1,10 @@
-@import "global/global.scss";
 @import "global/variables.scss";
+@import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
+@import "global/container.scss";
 @import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
 @import "blocks/page-photo.scss";
 @import "blocks/intro.scss";
 @import "blocks/advantages.scss";
@@ -12,5 +14,4 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/visually-hidden.scss";
-@import "blocks/page-photo-wrapper.scss";
 @import "blocks/main-nav.scss";

@@ -1,4 +1,5 @@
 .advantages__slogan {
+  text-align: center;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -13,20 +14,53 @@
   padding: 0;
   list-style: none;
   background-color: $white-grey;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin: 0 68px 0 0;
+  }
 }
 
 .advantages__title {
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .advantages__description {
+  text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 0 auto;
+  }
 }

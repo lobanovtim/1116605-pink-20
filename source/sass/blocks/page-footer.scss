@@ -1,0 +1,15 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__link {
+  padding: 0;
+  margin: 0;
+}

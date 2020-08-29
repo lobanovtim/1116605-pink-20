@@ -23,8 +23,43 @@
   width: 200px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    min-width: 400px;
     font-size: 50px;
     line-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 780px;
+    padding-top: 150px;
+  }
+}
+
+.page-form__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 54px;
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 22px;
+  }
+}
+
+.page-form__title--addition {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

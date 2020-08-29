@@ -6,3 +6,21 @@
   line-height: 33px;
   color: $white;
 }
+
+@mixin page-slogan-tablet {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 120%;
+  color: $white;
+}
+
+@mixin page-slogan-desktop {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  color: $white;
+}

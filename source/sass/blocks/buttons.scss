@@ -1,4 +1,5 @@
 .button {
+  display: block;
   box-sizing: border-box;
   font-style: normal;
   font-weight: bold;
@@ -7,5 +8,6 @@
   margin: 0;
   padding: 21px 39px;
   color: $white;
+  border: none;
   -webkit-appearance: none;
 }

@@ -1,12 +1,64 @@
 .social__list {
-  padding: 0;
+  padding: 0 0 41px 0;
   margin: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
 
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 14px;
+  width: 48px;
+  height: 48px;
+  border: 3px solid $dark-grey;
+  border-radius: 50%;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 11px;
+  }
+}
+
 .social__link {
   color: $black;
   text-decoration: none;
+  margin: 16px 0 0 18px;
+}
+
+.social__link--vkontakte {
+  display: block;
+  width: 18px;
+  height: 14px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--facebook {
+  display: block;
+  width: 9px;
+  height: 18px;
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--instagram {
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

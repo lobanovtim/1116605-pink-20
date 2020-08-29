@@ -1,0 +1,21 @@
+.map {
+  width: 100%;
+  min-height: 200px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: $white;
+    height: 123px;
+    width: 100%;
+    bottom: 80px;
+    z-index: 21;
+  }
+}

@@ -1,0 +1,234 @@
+.form__box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__entry-field {
+  text-align: start;
+  width: 100%;
+  height: calc(100% - 4px);
+  border: 2px solid $warm-grey;
+  border-radius: 1px;
+  padding: 0;
+  margin: 0 0 51px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__input-content {
+  font-size: 18px;
+  border: none;
+  color: $black;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+.form__text {
+  box-sizing: border-box;
+  width: 100%;
+  color: $black;
+  resize: none;
+}
+
+.form__wrapper-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1 / 1;
+    grid-row: 5;
+  }
+}
+
+.form__button--submit {
+  display: inline-block;
+  width: 100%;
+  min-height: 59px;
+  border: 2px solid $green;
+  border-radius: 1px;
+  background-color: $green;
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
+}
+
+.form__legend {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    align-items: right;
+    margin: 0;
+    padding-top: 15px;
+  }
+}
+
+.form__legend--star {
+  color: $red;
+}
+
+.form__legend--full-legend {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.form__surname,
+.form__name,
+.form__patronymic {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+  }
+}
+
+.form__user-data {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    padding-top: 50px;
+  }
+}
+
+.form__filter-application {
+  @media (min-width: $tablet-width) {
+    grid-columns: 1;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+}
+
+.form__input-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $red;
+  padding: 0 20px 17px 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 27px 0;
+  }
+}
+
+.form__input-title--full-name {
+  padding-top: 30px;
+}
+
+.form__user-contacts {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 3 / 4;
+    border: 2px solid $warm-grey;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1 / 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__user-contacts-title {
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $red;
+  padding: 30px 25px 40px 25px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form__user-review-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $red;
+  padding: 30px 25px 40px 25px;
+  background-color: $white;
+}
+
+.form__user-review {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $warm-grey;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1 / 1;
+    grid-row: 4;
+  }
+}
+
+.form__fragment {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px 0 60px;
+  }
+}
+
+.form__phone,
+.form__email {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.form__filter-achievements {
+  @media (min-width: $desktop-width) {
+    grid-column: -1 / 1;
+    grid-row: 3;
+  }
+}

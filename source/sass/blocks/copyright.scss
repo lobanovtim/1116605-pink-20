@@ -8,8 +8,20 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
   color: $black;
+  padding: 20px 0 0 25px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: $red;
 }

@@ -19,97 +19,108 @@
           />
         </a>
         <button
-          class="main-nav__button main-nav__button--open main-nav__button--close"
+          class="button main-nav__button main-nav__button--open main-nav__button--close"
           type="button"
         >
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main class="page-form container">
+    <main class="page-form">
       <div class="page-form__wrapper">
-        <h1 class="page-form__slogan">
+        <h1 class="page-form__slogan container">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
       </div>
-      <h2 class="page-form__title">
+      <h2 class="page-form__title container">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
+        <span class="page-form__title page-form__title--addition"
+          >Пожалуйста, заполните форму ниже:</span
+        >
       </h2>
-      <section class="form">
+      <section class="form container">
         <form class="form__box" action="https://form.ru" method="post">
-          <div class="form__surname">
-            <p class="form__input-title">Фамилия:</p>
-            <p class="form__entry-field">
-              <label class="visually-hidden" for="surname">Ваша фамилия</label>
-              <input
-                class="form__input-content form__input-field-data form__user-surname"
-                id="surname"
-                type="text"
-                name="surname"
-                placeholder="Укажите фамилию *"
-                required
-              />
-            </p>
+          <div class="form__user-data">
+            <div class="form__surname">
+              <p class="form__input-title form__input-title--full-name">
+                Фамилия:
+              </p>
+              <p class="form__entry-field">
+                <label class="visually-hidden" for="surname"
+                  >Ваша фамилия</label
+                >
+                <input
+                  class="form__input-content form__input-field-data form__user-surname"
+                  id="surname"
+                  type="text"
+                  name="surname"
+                  placeholder="Укажите фамилию *"
+                  required
+                />
+              </p>
+            </div>
+            <div class="form__name">
+              <p class="form__input-title form__input-title--full-name">Имя:</p>
+              <p class="form__entry-field">
+                <label class="visually-hidden" for="name">Ваше имя:</label>
+                <input
+                  class="form__input-content form__input-field-data form__user-name"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Укажите имя *"
+                  required
+                />
+              </p>
+            </div>
+            <div class="form__patronymic">
+              <p class="form__input-title form__input-title--full-name">
+                Отчество:
+              </p>
+              <p class="form__entry-field">
+                <label class="visually-hidden" for="patronymic"
+                  >Ваше отчество:</label
+                >
+                <input
+                  class="form__input-content form__input-field-data form__user-patronymic"
+                  id="patronymic"
+                  type="text"
+                  name="patronymic"
+                  placeholder="Ну и отчество тоже"
+                />
+              </p>
+            </div>
           </div>
-          <div class="form__name">
-            <p class="form__input-title">Имя:</p>
-            <p class="form__entry-field">
-              <label class="visually-hidden" for="name">Ваше имя:</label>
-              <input
-                class="form__input-content form__input-field-data form__user-name"
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Укажите имя *"
-                required
-              />
-            </p>
-          </div>
-          <div class="form__patronymic">
-            <p class="form__input-title">Отчество:</p>
-            <p class="form__entry-field">
-              <label class="visually-hidden" for="patronymic"
-                >Ваше отчество:</label
-              >
-              <input
-                class="form__input-content form__input-field-data form__user-patronymic"
-                id="patronymic"
-                type="text"
-                name="patronymic"
-                placeholder="Ну и отчество тоже"
-              />
-            </p>
-          </div>
-          <fieldset class="filter">
+          <fieldset class="form__fragment filter form__filter-achievements">
             <legend class="filter__legend">
               Ваши безбашенные достижения в путешествии
             </legend>
-            <ul class="filter__input-list">
+            <ul class="filter__input-list filter__input-list--checkbox">
               <li class="filter__option filter__checkbox">
                 <input
                   class="visually-hidden filter__input-checkbox filter__input"
@@ -175,35 +186,40 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__phone">
-            <p class="form__input-title">Номер телефона</p>
-            <p class="form__entry-field">
-              <label class="visually-hidden" for="phone">Адрес почты</label>
-              <input
-                class="form__input-content form__input-field-data form__user-phone"
-                id="phone"
-                type="tel"
-                name="phone"
-                placeholder="Номер, пожалуйста"
-              />
-            </p>
-          </div>
-          <div class="form__email">
-            <p class="form__input-title">Адрес почты</p>
-            <p class="form__entry-field">
-              <label class="visually-hidden" for="email">Адрес почты</label>
-              <input
-                class="form__input-content form__input-field-data form__user-email"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Введите почту *"
-                required
-              />
-            </p>
-          </div>
-          <fieldset class="filter">
-            <legend class="filer__legend">
+          <fieldset class="form__fragment form__user-contacts">
+            <legend class="form__user-contacts-title">
+              Контактная информация
+            </legend>
+            <div class="form__phone">
+              <p class="form__input-title">Номер телефона</p>
+              <p class="form__entry-field">
+                <label class="visually-hidden" for="phone">Адрес почты</label>
+                <input
+                  class="form__input-content form__input-field-data form__user-phone"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Номер, пожалуйста"
+                />
+              </p>
+            </div>
+            <div class="form__email">
+              <p class="form__input-title">Адрес почты</p>
+              <p class="form__entry-field">
+                <label class="visually-hidden" for="email">Адрес почты</label>
+                <input
+                  class="form__input-content form__input-field-data form__user-email"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Введите почту *"
+                  required
+                />
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="form__fragment filter form__filter-application">
+            <legend class="filter__legend">
               С каким приложением путешествовали?
             </legend>
             <ul class="filter__input-list">
@@ -240,35 +256,42 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__text">
-            <p class="form__input-title">Опишите свои эмоции</p>
+          <fieldset class="form__fragment form__user-review">
+            <legend class="form__user-review-title">
+              Опишите свои эмоции
+            </legend>
             <p class="form__entry-field">
               <label class="visually-hidden" for="text">Текст письма:</label>
               <textarea
                 class="form__input-content form__input-field-data form__text"
-                rows="4"
+                rows="6"
                 cols="40"
                 name="text"
                 id="text"
-                placeholder="Можно прям в красках, не
-              стесняясь в выражениях"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"
               ></textarea>
             </p>
+          </fieldset>
+          <div class="form__wrapper-button">
+            <button class="button form__button--submit" type="submit">
+              Отправить форму
+            </button>
+            <p class="form__legend">
+              <small>
+                <span class="form__legend--star">*</span> — обязательные <span class="form__legend--full-legend">для заполнения</span> поля
+              </small>
+            </p>
           </div>
-          <button class="button button__submit" type="submit">Отправить форму</button>
         </form>
-        <p class="form__legend">
-          <small>
-            * — обязательные поля
-          </small>
-        </p>
       </section>
     </main>
     <footer class="page-footer container">
       <a class="page-footer__link" href="index.html">
         <img
           class="page-footer__logo"
-          src="https://via.placeholder.com/150x150"
+          src="../img/logo-pink-blue-mobile.svg"
+          width="145"
+          height="40"
           alt="Мобильное приложение «Pink»"
         />
       </a>
@@ -276,17 +299,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#"
-              >Мы в Вконтакте</a
+              ><span class="visually-hidden">Мы в Вконтакте</span></a
             >
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#"
-              >Мы в Фейсбуке</a
+              ><span class="visually-hidden">Мы в Фейсбуке</span></a
             >
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#"
-              >Мы в Инстаграме</a
+              ><span class="visually-hidden">Мы в Инстаграме</span></a
             >
           </li>
         </ul>
@@ -296,7 +319,7 @@
         <a
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
-          >HTML Academy</a
+          ><span class="visually-hidden">HTML Academy</span></a
         >
       </div>
     </footer>

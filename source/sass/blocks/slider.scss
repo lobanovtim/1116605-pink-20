@@ -1,0 +1,32 @@
+.slider__toggles {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 60px 0;
+  min-height: 12px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  margin: auto 0 auto 19px;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba($color: $black, $alpha: 0.3);
+  border: none;
+}
+
+.slider__toggle--current {
+  padding: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: $white;
+  border: 3px solid #283645;
+}

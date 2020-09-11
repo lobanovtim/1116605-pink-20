@@ -1,0 +1,186 @@
+.filter-editor {
+  padding: 0 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.filter-editor__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 0 0 0;
+  margin: 0 0 20px 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 22px 0 2px 12px;
+  }
+}
+
+.filter-editor__item {
+  margin: 0 0 0 -15px;
+}
+
+.filter-editor__range {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background-color: $dark-grey;
+  border: none;
+  border-radius: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-bottom: 2px solid rgba($color: $dark-grey, $alpha: 0.1);
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.filter-editor__range-wrapper {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    margin: 10px 0 0 0;
+  }
+}
+
+.filter-editor__container {
+  margin: 0 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 0 26px 29px;
+    margin: 0 -11px 0 0;
+    flex-direction: column;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba($color: $dark-grey, $alpha: 0.1);
+  }
+}
+
+.filter-editor__icon {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+    fill: $red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.filter-editor__icon--active-icon {
+  fill: $red;
+}
+
+input[type="range"] {
+  height: 2px;
+  appearance: none;
+  width: 92%;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: 2px solid $red;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $white;
+  cursor: pointer;
+  appearance: none;
+  margin-top: -5px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 2px solid $red;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $white;
+  cursor: pointer;
+
+  &:focus {
+    background-color: $red;
+  }
+}
+
+input[type="range"]::-ms-track {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: $dark-grey;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: $dark-grey;
+}
+
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  border: 2px solid $red;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $white;
+  cursor: pointer;
+
+  &:focus {
+    background-color: $red;
+  }
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: $dark-grey;
+  border: none;
+}
+
+.filter-editor__range--no-active {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

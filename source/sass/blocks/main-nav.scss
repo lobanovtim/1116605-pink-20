@@ -11,6 +11,14 @@
   }
 }
 
+.main-nav__js {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .main-nav__button {
   position: absolute;
   top: 0;
@@ -20,42 +28,90 @@
   height: 24px;
   cursor: pointer;
   background-color: $grey;
+  padding: 22px 44px 0 0;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.main-nav__button--close .main-nav__button::before {
-  content: "";
+.main-nav__button--close {
+  display: block;
   position: absolute;
   width: 23px;
   height: 23px;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $white;
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 44px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
-.main-nav__button--close .main-nav__button:hover::before {
-  background-color: $red;
+.main-nav__button--icon-close {
+  fill: $white;
+
+  &:hover,
+  &:focus {
+    fill: $red;
+  }
+
+  &:active {
+    fill: $red;
+    opacity: 0.3;
+  }
 }
 
-.main-nav__button--close .main-nav__button:focus::before {
-  background-color: $red;
-}
-
-.main-nav__button--close .main-nav__button:active::before {
-  background-color: $red;
-  opacity: 0.3;
-}
-
-.main-nav__button--open .main-nav__button::before {
+.main-nav__button--open {
+  display: none;
   position: absolute;
   width: 50px;
   height: 24px;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $white;
+  background-color: transparent;
+  padding: 21px 70px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 70px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__button--icon-open {
+  fill: $white;
+
+  &:hover,
+  &:focus {
+    fill: $red;
+  }
+
+  &:active {
+    fill: $red;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__button-visible {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__button-hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

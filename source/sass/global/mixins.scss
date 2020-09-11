@@ -1,5 +1,4 @@
 @mixin page-slogan {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -8,7 +7,6 @@
 }
 
 @mixin page-slogan-tablet {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
@@ -17,7 +15,6 @@
 }
 
 @mixin page-slogan-desktop {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 50px;

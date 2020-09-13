@@ -10,7 +10,7 @@ pageHeader.classList.add("page-header__js");
 navButtonClose.classList.add("main-nav__button-hidden");
 navButtonOpen.classList.add("main-nav__button-visible");
 
-if (typeof (intro) != "undefined" && element != null) {
+if (typeof(intro) != 'undefined' && intro != null) {
   intro.classList.add("intro__js");
 }
 
@@ -22,7 +22,7 @@ navButtonOpen.addEventListener("click", function () {
     navMainList.classList.remove("main-nav__js");
     pageHeader.classList.remove("page-header__js");
 
-    if (typeof (intro) != "undefined" && element != null) {
+    if (typeof(intro) != 'undefined' && intro != null) {
       intro.classList.remove("intro__js");
     }
 
@@ -41,7 +41,8 @@ navButtonClose.addEventListener("click", function () {
     navButtonClose.classList.add("main-nav__button-hidden");
     navMainList.classList.add("main-nav__js");
     pageHeader.classList.add("page-header__js");
-    if (intro.lenght > 0) {
+
+    if (typeof(intro) != 'undefined' && intro != null) {
       intro.classList.add("intro__js");
     }
   }

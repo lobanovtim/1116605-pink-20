@@ -57,6 +57,11 @@
   width: 100%;
   color: $black;
   resize: none;
+  padding: 17px 20px 10px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 20px 1px 18px;
+  }
 }
 
 .form__wrapper-button {
@@ -83,7 +88,7 @@
   border: 2px solid $green;
   border-radius: 1px;
   background-color: $green;
-  margin: -5px 0 32px 0;
+  margin: 2px 0 32px 0;
   text-transform: uppercase;
 
   &:hover,
@@ -97,7 +102,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 48%;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,7 +127,7 @@
   @media (min-width: $tablet-width) {
     align-items: right;
     margin: 0;
-    padding-top: 15px;
+    padding: 11px 0 0 0;
   }
 }
 
@@ -148,6 +153,12 @@
   }
 }
 
+.form__patronymic {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
 .form__user-data {
   margin: 0 0 0 0;
 
@@ -158,7 +169,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 1;
-    padding-top: 50px;
+    padding-top: 14px;
+    margin: 0 25px 0 0;
   }
 }
 
@@ -166,11 +178,13 @@
   @media (min-width: $tablet-width) {
     grid-columns: 1;
     grid-row: 2 / 3;
+    padding: 0 0 20px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1;
+    margin: 0 0 39px 25px;
   }
 }
 
@@ -195,7 +209,7 @@
   margin: 0 0 10px 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 24px 25px 10px 0;
+    margin: 24px 22px 10px 0;
   }
 }
 
@@ -208,6 +222,19 @@
     grid-row: 3 / 4;
     border: 2px solid $warm-grey;
     border-radius: 1px;
+    padding-top: 14px;
+    margin: 0 0 39px 0;
+
+    .form__user-contacts-title {
+      @media (min-width: $tablet-width) {
+        padding: 38px 40px 37px 35px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 0 35px 0 35px;
+        margin: 0 0 35px 0;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -215,6 +242,7 @@
     grid-row: 2;
     display: flex;
     justify-content: space-between;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -246,6 +274,10 @@
   color: $red;
   padding: 21px 25px 15px 20px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px 0;
+  }
 }
 
 .form__user-review {
@@ -254,6 +286,11 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $warm-grey;
     border-radius: 1px;
+    margin: 0 0 51px 0;
+
+    & .form__entry-field {
+      margin: 0 0 51px 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -264,6 +301,32 @@
 
 .form__user-contacts .form__input-title {
   padding: 0 0 10px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0 0 18px;
+  }
+}
+
+.form__user-contacts .form__phone {
+  @media (min-width: $tablet-width) {
+    margin: -17px 0 34px 0;
+  }
+}
+
+.form__phone .form__entry-field {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 0;
+  }
+}
+
+.form__email {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px 0;
+
+    & .form__entry-field {
+      margin: 0 0 0 0;
+    }
+  }
 }
 
 .form__phone,
@@ -272,9 +335,17 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 35%;
+  }
 }
 
 .form__filter-achievements {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px 0;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: -1 / 1;
     grid-row: 3;

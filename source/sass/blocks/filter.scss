@@ -31,6 +31,10 @@
     width: max-content;
     background-color: $white;
     padding: 0 30px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -40,11 +44,15 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 56px 0;
+    padding: 0 0 36px 0;
   }
 }
 
 .filter__input-list--checkbox {
+  @media (min-width: $tablet-width) {
+    padding: 0 0 48px 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -64,6 +72,10 @@
   &:nth-child(2n+1) {
     grid-row: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 0 5px 57px;
+  }
 }
 
 .filter__input-checkbox {
@@ -72,11 +84,16 @@
     position: absolute;
     width: 35px;
     height: 35px;
-    top: -3px;
+    top: -4px;
     left: 0;
     background: $white;
     border: 2px solid $warm-grey;
     border-radius: 1px;
+
+    @media (min-width: $tablet-width) {
+      top: 42px;
+      left: -2px;
+    }
   }
 
   &:checked + label::before {
@@ -84,11 +101,16 @@
     position: absolute;
     width: 35px;
     height: 35px;
-    top: -3px;
+    top: -4px;
     left: 0;
     background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
     background-position: 7px 10px;
+
+    @media (min-width: $tablet-width) {
+      top: 42px;
+      left: -2px;
+    }
   }
 }
 
@@ -114,8 +136,13 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
+      top: 42px;
+      left: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 44px;
-      left: -1px;
+      left: 73px;
     }
   }
 
@@ -131,8 +158,13 @@
     background-position: 10px 10px;
 
     @media (min-width: $tablet-width) {
+      top: 42px;
+      left: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 44px;
-      left: -1px;
+      left: 73px;
     }
   }
 }
@@ -141,7 +173,11 @@
   padding: 0 0 43px 70px;
 
   @media (min-width: $tablet-width) {
-    padding: 47px 0 0 59px;
+    padding: 47px 0 0 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 0 0 135px;
   }
 }
 

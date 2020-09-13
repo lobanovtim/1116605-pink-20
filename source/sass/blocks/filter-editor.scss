@@ -3,26 +3,77 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 0 0 48px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 102px 0;
   }
 }
 
 .filter-editor__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 0 0 0 0;
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 22px 0 2px 12px;
+    margin: 34px 0 2px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
   }
 }
 
 .filter-editor__item {
-  margin: 0 0 0 -15px;
+  margin: 0 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+  }
+
+  & .filter-editor__icon-contrast {
+    width: 16px;
+    height: 16px;
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin: 0 0 0 8px;
+
+    @media (min-width: $tablet-width) {
+      margin: 9px 0 10px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 13px 0 17px 0;
+    }
+  }
+
+  &:nth-child(3) {
+    margin: 0 18px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 29px 0;
+    }
+  }
 }
 
 .filter-editor__range {
@@ -50,7 +101,12 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 220px;
-    margin: 10px 0 0 0;
+    margin: 32px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+    padding: 21px 0 0 0;
   }
 }
 
@@ -58,12 +114,16 @@
   margin: 0 0 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 0 26px 29px;
+    padding: 31px 0 18px 27px;
     margin: 0 -11px 0 0;
     flex-direction: column;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba($color: $dark-grey, $alpha: 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 76px 41px 44px;
   }
 }
 
@@ -82,6 +142,20 @@
 
 .filter-editor__icon--active-icon {
   fill: $red;
+}
+
+.filter-editor__icon-crop {
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.filter-editor__icon-fill {
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
 }
 
 input[type="range"] {

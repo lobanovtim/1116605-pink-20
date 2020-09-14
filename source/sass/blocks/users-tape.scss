@@ -119,6 +119,50 @@
   }
 }
 
+.users-tape__panorama-label {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: $white;
+  text-transform: uppercase;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 63px;
+    right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 60px;
+    right: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    top: -6px;
+    right: -20px;
+    background-color: $red;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: -6px;
+      right: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -6px;
+      right: -20px;
+    }
+  }
+}
+
 .users-tape__user {
   font-style: normal;
   font-weight: bold;

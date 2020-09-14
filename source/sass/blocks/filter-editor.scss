@@ -42,8 +42,13 @@
   }
 
   & .filter-editor__icon-contrast {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 32px;
@@ -52,7 +57,7 @@
   }
 
   &:nth-child(2) {
-    margin: 0 0 0 8px;
+    margin: 0 10px 0 8px;
 
     @media (min-width: $tablet-width) {
       margin: 9px 0 10px 0;

@@ -54,9 +54,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 60px 0;
   }
 }
 
@@ -69,12 +69,22 @@
   padding: 0 0 52px 60px;
   color: $dark-grey;
 
-  &:nth-child(2n+1) {
-    grid-row: 1;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 47px 0 5px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 0 0 120px;
+    margin: 0 0 0 0;
+
+    &:nth-child(2n+2) {
+      order: 1;
+      padding: 48px 0 0 165px;
+    }
+
+    &:nth-child(4n+2) {
+      padding: 49px 0 0 118px;
+    }
   }
 }
 
@@ -94,6 +104,15 @@
       top: 42px;
       left: -2px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 43px;
+      left: 63px;
+
+      &:nth-child(4n+2) {
+        left: 199px;
+      }
+    }
   }
 
   &:checked + label::before {
@@ -110,6 +129,15 @@
     @media (min-width: $tablet-width) {
       top: 42px;
       left: -2px;
+    }
+
+    @media (min-width: $desktop-width) {
+    top: 43px;
+    left: 63px;
+
+      &:nth-child(5n) {
+        left: 99px;
+      }
     }
   }
 }

@@ -144,38 +144,38 @@
                 />
               </p>
             </div>
-            <div class="form__name">
-              <p class="form__input-title form__input-title--full-name">Имя:</p>
-              <p class="form__entry-field">
-                <label class="visually-hidden" for="name">Ваше имя:</label>
-                <input
-                  class="form__input-content form__input-field-data form__user-name"
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder="Введите ваше имя *"
-                  required
-                />
-              </p>
+              <div class="form__name">
+                <p class="form__input-title form__input-title--full-name">Имя:</p>
+                <p class="form__entry-field">
+                  <label class="visually-hidden" for="name">Ваше имя:</label>
+                  <input
+                    class="form__input-content form__input-field-data form__user-name"
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Введите ваше имя *"
+                    required
+                  />
+                </p>
+              </div>
+              <div class="form__patronymic">
+                <p class="form__input-title form__input-title--full-name">
+                  Отчество:
+                </p>
+                <p class="form__entry-field">
+                  <label class="visually-hidden" for="patronymic"
+                    >Ваше отчество:</label
+                  >
+                  <input
+                    class="form__input-content form__input-field-data form__user-patronymic"
+                    id="patronymic"
+                    type="text"
+                    name="patronymic"
+                    placeholder="Ну и отчество тоже"
+                  />
+                </p>
+              </div>
             </div>
-            <div class="form__patronymic">
-              <p class="form__input-title form__input-title--full-name">
-                Отчество:
-              </p>
-              <p class="form__entry-field">
-                <label class="visually-hidden" for="patronymic"
-                  >Ваше отчество:</label
-                >
-                <input
-                  class="form__input-content form__input-field-data form__user-patronymic"
-                  id="patronymic"
-                  type="text"
-                  name="patronymic"
-                  placeholder="Ну и отчество тоже"
-                />
-              </p>
-            </div>
-          </div>
           <fieldset class="form__fragment filter form__filter-achievements">
             <legend class="filter__legend">
               Ваши безбашенные <br />
@@ -251,32 +251,34 @@
             <legend class="form__user-contacts-title">
               Контактная информация
             </legend>
-            <div class="form__phone">
-              <p class="form__input-title">Номер телефона</p>
-              <p class="form__entry-field">
-                <label class="visually-hidden" for="phone">Адрес почты</label>
-                <input
-                  class="form__input-content form__input-field-data form__user-phone"
-                  id="phone"
-                  type="tel"
-                  name="phone"
-                  placeholder="Номер, пожалуйста"
-                />
-              </p>
-            </div>
-            <div class="form__email">
-              <p class="form__input-title">Адрес почты</p>
-              <p class="form__entry-field">
-                <label class="visually-hidden" for="email">Адрес почты</label>
-                <input
-                  class="form__input-content form__input-field-data form__user-email"
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Введите почту *"
-                  required
-                />
-              </p>
+            <div class="form__contacts-wrapper">
+              <div class="form__phone">
+                <p class="form__input-title">Номер телефона</p>
+                <p class="form__entry-field">
+                  <label class="visually-hidden" for="phone">Адрес почты</label>
+                  <input
+                    class="form__input-content form__input-field-data form__user-phone"
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    placeholder="Номер, пожалуйста"
+                  />
+                </p>
+              </div>
+              <div class="form__email">
+                <p class="form__input-title">Адрес почты</p>
+                <p class="form__entry-field">
+                  <label class="visually-hidden" for="email">Адрес почты</label>
+                  <input
+                    class="form__input-content form__input-field-data form__user-email"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Введите почту *"
+                    required
+                  />
+                </p>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fragment filter form__filter-application">
@@ -462,7 +464,7 @@
       </div>
     </footer>
     <section class="popup popup__error">
-      <div class="popup__container container">
+      <div class="popup__container">
         <h2 class="popup__title">Что-то пошло не так!</h2>
         <p class="popup__content">
           Проверьте поля, выделенные красным, скорее всего вы забыли их

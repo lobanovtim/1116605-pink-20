@@ -132,12 +132,16 @@
     }
 
     @media (min-width: $desktop-width) {
-    top: 43px;
-    left: 63px;
+      top: 43px;
+      left: 63px;
+    }
+  }
+}
 
-      &:nth-child(5n) {
-        left: 99px;
-      }
+.filter__checkbox .filter__input-checkbox:not(:nth-child(4n)) {
+  @media (min-width: $desktop-width) {
+    & + label::before {
+      left: 99px;
     }
   }
 }

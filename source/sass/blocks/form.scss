@@ -364,9 +364,9 @@
       right: 0;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 0 0;
-      z-index: 2;
+      background-size: auto;
+      background-position: center;
+      background-color: $white-grey;
     }
   }
 }
@@ -388,11 +388,11 @@
           height: 59px;
           bottom: 0;
           right: 0;
-          background-image: url("../img/icon-email.svg");
+          background-image: url("../img/icon-mail.svg");
           background-repeat: no-repeat;
-          background-size: cover;
-          background-position: 0 0;
-          z-index: 2;
+          background-size: auto;
+          background-position: center;
+          background-color: $white-grey;
         }
       }
     }

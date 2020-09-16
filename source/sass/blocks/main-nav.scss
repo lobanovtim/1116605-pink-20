@@ -36,7 +36,7 @@
 }
 
 .main-nav__button--close {
-  display: block;
+  display: none;
   position: absolute;
   width: 23px;
   height: 23px;
@@ -51,7 +51,7 @@
   }
 }
 
-.main-nav__button--icon-close {
+.main-nav__button-icon-close {
   fill: $white;
 
   &:hover,
@@ -82,7 +82,7 @@
   }
 }
 
-.main-nav__button--icon-open {
+.main-nav__button-icon-open {
   fill: $white;
 
   &:hover,

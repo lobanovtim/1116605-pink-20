@@ -91,10 +91,11 @@
   }
 }
 
-.form__button--submit {
+.form__button-submit {
   display: inline-block;
   width: 100%;
   min-height: 59px;
+  line-height: 30px;
   border: 2px solid $green;
   border-radius: 1px;
   background-color: $green;
@@ -116,7 +117,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 32%;
+    width: 33%;
     margin: 0;
   }
 }
@@ -129,7 +130,7 @@
 .form__legend {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   align-items: center;
   text-transform: uppercase;
@@ -142,11 +143,11 @@
   }
 }
 
-.form__legend--star {
+.form__legend-star {
   color: $red;
 }
 
-.form__legend--full-legend {
+.form__legend-full-legend {
   display: none;
 
   @media (min-width: $desktop-width) {

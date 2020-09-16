@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="page__body">
+  <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -20,7 +20,7 @@
             <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img
-              class="page-header__logo--img"
+              class="page-header__logo-img"
               src="img/logo-pink-white-mobile.svg"
               width="74"
               height="23"
@@ -34,7 +34,7 @@
           type="button"
         >
           <svg
-            class="main-nav__button--icon-open"
+            class="main-nav__button-icon-open"
             width="50px"
             height="24px">
             <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
@@ -46,7 +46,7 @@
           type="button"
         >
           <svg
-            class="main-nav__button--icon-close"
+            class="main-nav__button-icon-close"
             width="24px"
             height="24px">
             <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
@@ -131,7 +131,7 @@
           Устали от серости мегаполиса?<br class="advantages__slogan-carryover--mobile" /><br class="advantages__slogan-carryover--mobile" />
           Нам есть, что вам <br class="advantages__slogan-carryover--tablet" /> предложить!
         </p>
-        <div class="advantages__list--wrapper">
+        <div class="advantages__list-wrapper">
           <ul class="advantages__list container">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -189,7 +189,7 @@
               <p class="reviews__author-name">
                 Николай Петров
               </p>
-              <p class="reviews__author-name--info">
+              <p class="reviews__author-name-info">
                 25 лет, водитель трамвая
               </p>
               <p class="reviews__review-text">
@@ -230,10 +230,10 @@
           <h3 class="visually-hidden">Наши цены</h3>
           <table class="price__table">
             <tr>
-              <th class="price__table--title price__desktop price__desktop--cell-hidden">&nbsp;</th>
-              <th class="price__table--title">База <br><span class="price__table--coast">1,99 USD</span></th>
-              <th class="price__table--title"><span class="price__table--best-offer">Хит</span>Стандарт <br><span class="price__table--coast">3,99 USD</span></th>
-              <th class="price__table--title">Анлим <br><span class="price__table--coast">9,99 USD</span></th>
+              <th class="price__table-title price__desktop price__desktop--cell-hidden">&nbsp;</th>
+              <th class="price__table-title">База <br><span class="price__table-coast">1,99 USD</span></th>
+              <th class="price__table-title"><span class="price__table-best-offer">Хит</span>Стандарт <br><span class="price__table-coast">3,99 USD</span></th>
+              <th class="price__table-title">Анлим <br><span class="price__table-coast">9,99 USD</span></th>
             </tr>
             <tr>
               <td class="price__desktop">
@@ -241,15 +241,15 @@
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Розовый фильтр</span>
-                <span class="price__mobile-item--value-yes">Да</span>
+                <span class="price__mobile-item-value-yes">Да</span>
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Розовый фильтр</span>
-                <span class="price__mobile-item--value-yes">Да</span>
+                <span class="price__mobile-item-value-yes">Да</span>
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Розовый фильтр</span>
-                <span class="price__mobile-item--value-yes">Да</span>
+                <span class="price__mobile-item-value-yes">Да</span>
               </td>
             </tr>
             <tr>
@@ -258,15 +258,15 @@
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Смайлики</span>
-                <span class="price__mobile-item--value-no">Нет</span>
+                <span class="price__mobile-item-value-no">Нет</span>
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Смайлики</span>
-                <span class="price__mobile-item--value-yes">Да</span>
+                <span class="price__mobile-item-value-yes">Да</span>
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Смайлики</span>
-                <span class="price__mobile-item--value-yes">Да</span>
+                <span class="price__mobile-item-value-yes">Да</span>
               </td>
             </tr>
             <tr>
@@ -275,15 +275,15 @@
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Комментарии</span>
-                <span class="price__mobile-item--value-no">Нет</span>
+                <span class="price__mobile-item-value-no">Нет</span>
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Комментарии</span>
-                <span class="price__mobile-item--value-no">Нет</span>
+                <span class="price__mobile-item-value-no">Нет</span>
               </td>
               <td class="price__mobile">
                 <span class="price__mobile-item">Комментарии</span>
-                <span class="price__mobile-item--value-yes">Да</span>
+                <span class="price__mobile-item-value-yes">Да</span>
               </td>
             </tr>
           </table>
@@ -307,7 +307,7 @@
               Звоните:
             </dt>
             <dd class="contacts__difinition contacts__phone">
-              <a class="contacts__phone--link" href="tel:+78125556666">
+              <a class="contacts__phone-link" href="tel:+78125556666">
                 +7 (812) 555-66-66
               </a>
             </dd>
@@ -317,17 +317,17 @@
               Пишите:
             </dt>
             <dd class="contacts__difinition contacts__email">
-              <a class="contacts__email--link" href="mailto:mail@htmlacademy.ru"
+              <a class="contacts__email-link" href="mailto:mail@htmlacademy.ru"
                 >mail@htmlacademy.ru</a
               >
             </dd>
           </div>
-          <div class="cotacts__item">
+          <div class="contacts__item">
             <dt class="contacts__appeal">
               Приезжайте в гости:
             </dt>
             <dd class="contacts__difinition contacts__adress">
-              <address class="contacts__adress--name">
+              <address class="contacts__adress-name">
                 ул. Большая<br />
                 Конюшенная, 19/8
               </address>

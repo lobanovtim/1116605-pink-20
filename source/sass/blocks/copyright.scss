@@ -27,6 +27,16 @@
 
   & svg {
     fill: $red;
+
+    &:hover,
+    &:focus {
+      fill: $dark-grey;
+    }
+
+    &:active {
+      fill: $dark-grey;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

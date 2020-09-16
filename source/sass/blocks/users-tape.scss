@@ -228,7 +228,7 @@
   }
 }
 
-.users-tape__like--counter {
+.users-tape__like-counter {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -243,7 +243,7 @@
   }
 }
 
-.users-tape__like--image {
+.users-tape__like-image {
   width: 13px;
   height: 12px;
   fill: $red;
@@ -255,6 +255,7 @@
 
 .users-tape__image {
   width: 100%;
+  min-height: 180px;
   display: block;
   margin: 0 0 0 0;
   padding: 0 0 17px 0;

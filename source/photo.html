@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="page__body">
+  <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -62,7 +62,7 @@
               srcset="img/logo-pink-white-tablet.svg"
             />
             <img
-              class="page-header__logo--img"
+              class="page-header__logo-img"
               src="img/logo-pink-white-mobile.svg"
               width="74"
               height="23"
@@ -75,7 +75,7 @@
             class="button main-nav__button main-nav__button--open"
             type="button"
           >
-            <svg class="main-nav__button--icon-open" width="50px" height="24px">
+            <svg class="main-nav__button-icon-open" width="50px" height="24px">
               <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
             </svg>
             <span class="visually-hidden">Открыть</span>
@@ -84,11 +84,7 @@
             class="button main-nav__button main-nav__button--close"
             type="button"
           >
-            <svg
-              class="main-nav__button--icon-close"
-              width="24px"
-              height="24px"
-            >
+            <svg class="main-nav__button-icon-close" width="24px" height="24px">
               <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
             </svg>
             <span class="visually-hidden">Закрыть меню</span>
@@ -117,7 +113,9 @@
         <h1 class="page-photo__title container">Фотографии пользователей</h1>
       </div>
       <section class="users-tape">
-        <h2 class="visually-hidden">Фотографии, которыми уже поделились наши пользователи</h2>
+        <h2 class="visually-hidden">
+          Фотографии, которыми уже поделились наши пользователи
+        </h2>
         <p class="users-tape__slogan">
           Взгляните на фотографии, которые выкладывают пользователи!<br />Видите,
           как не хватает ваших?
@@ -180,13 +178,13 @@
                 прямую трансляцию в перископе, задавайте свои вопросы!
               </blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                   <span class="visually-hidden">Поставить лайк</span>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 215</p>
+                <p class="users-tape__like-counter">Нравится: 215</p>
               </div>
             </div>
           </li>
@@ -247,12 +245,12 @@
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 356</p>
+                <p class="users-tape__like-counter">Нравится: 356</p>
               </div>
             </div>
           </li>
@@ -313,12 +311,12 @@
                 Соседи будут рады!
               </blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 666</p>
+                <p class="users-tape__like-counter">Нравится: 666</p>
               </div>
             </div>
           </li>
@@ -379,12 +377,12 @@
                 Здесь могла быть ваша цитата о высоком и вечном.
               </blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 215</p>
+                <p class="users-tape__like-counter">Нравится: 215</p>
               </div>
             </div>
           </li>
@@ -445,12 +443,12 @@
                 Самая кубанская в мире!
               </blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 4</p>
+                <p class="users-tape__like-counter">Нравится: 4</p>
               </div>
             </div>
           </li>
@@ -509,12 +507,12 @@
               <p class="users-tape__time-post">(40 часов назад)</p>
               <blockquote class="users-tape__comment">Где снег-то?</blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 150</p>
+                <p class="users-tape__like-counter">Нравится: 150</p>
               </div>
             </div>
           </li>
@@ -575,12 +573,12 @@
                 Всем GM и взаимные лайки!
               </blockquote>
               <div class="users-tape__like">
-                <span class="users-tape__like--image">
+                <span class="users-tape__like-image">
                   <svg width="12px" height="12px">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </span>
-                <p class="users-tape__like--counter">Нравится: 2560</p>
+                <p class="users-tape__like-counter">Нравится: 2560</p>
               </div>
             </div>
           </li>
@@ -640,7 +638,7 @@
               alt="Ваша фотография"
             />
           </picture>
-          <div class="filter-editor__filter-container">
+          <div class="filter-editor">
             <div class="photo-post__filter filter-editor">
               <ul class="filter-editor__list">
                 <li class="filter-editor__item filter-editor__crop">
@@ -718,21 +716,21 @@
                 </div>
               </div>
             </div>
-            <div class="photo-post__button-wrapper">
-              <button
-                class="button photo-post__button photo-post__button--send-post"
-                type="submit"
-              >
-                Запостить
-              </button>
-              <button
-                class="button photo-post__button photo-post__button--cancel"
-                type="submit"
-              >
-                Отмена
-              </button>
-            </div>
           </div>
+              <div class="photo-post__button-wrapper">
+                <button
+                  class="button photo-post__button photo-post__button--send-post"
+                  type="submit"
+                >
+                  Запостить
+                </button>
+                <button
+                  class="button photo-post__button photo-post__button--cancel"
+                  type="submit"
+                >
+                  Отмена
+                </button>
+              </div>
         </div>
       </section>
     </main>

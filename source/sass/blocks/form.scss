@@ -51,6 +51,10 @@
   padding: 18px 20px 17px 20px;
   width: calc(100% - 40px);
   outline: none;
+
+  &:focus {
+    outline: 2 solid $red;
+  }
 }
 
 .form__text {
@@ -165,43 +169,6 @@
     padding-bottom: 10px;
   }
 }
-
-.form__user-phone {
-  @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 59px;
-      bottom: 0;
-      right: 0;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 0 0;
-      z-index: 2;
-    }
-  }
-}
-
-.form__user-email {
-  @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 59px;
-      bottom: 0;
-      right: 0;
-      background-image: url("../img/icon-email.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 0 0;
-      z-index: 2;
-    }
-  }
-}
-
 
 .form__user-data {
   margin: 0 0 0 0;
@@ -387,6 +354,20 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 15px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      z-index: 2;
+    }
   }
 }
 
@@ -399,6 +380,20 @@
 
       @media (min-width: $desktop-width) {
         margin: 0 0 30px 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 59px;
+          height: 59px;
+          bottom: 0;
+          right: 0;
+          background-image: url("../img/icon-email.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          z-index: 2;
+        }
       }
     }
   }
@@ -412,6 +407,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     min-width: 45%;
     margin: 0 4px 0 0;
   }

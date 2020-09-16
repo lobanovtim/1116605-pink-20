@@ -1,6 +1,20 @@
 .filter-editor {
   padding: 0 0 15px 0;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    height: 1px;
+    width: 120%;
+    background-color: rgba($color: $dark-grey, $alpha: 0.1);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 0 0 48px 0;
@@ -33,8 +47,23 @@
 .filter-editor__item {
   margin: 0 0 0 0;
 
+  & .filter-editor__icon {
+    fill: $dark-grey;
+    opacity: 0.3;
+  }
+
+  & .filter-editor__icon--active-icon {
+    fill: $red;
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 0 16px 0;
+
+    & .filter-editor__icon {
+      fill: $red;
+      opacity: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -94,6 +123,24 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+      height: 1px;
+      width: 112%;
+      background-color: rgba($color: $dark-grey, $alpha: 0.1);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: 26px;
+      right: 70px;
+      width: 95%;
+    }
   }
 }
 
@@ -117,14 +164,12 @@
 
 .filter-editor__container {
   margin: 0 0 0 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 31px 0 18px 27px;
     margin: 0 -11px 0 0;
     flex-direction: column;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba($color: $dark-grey, $alpha: 0.1);
   }
 
   @media (min-width: $desktop-width) {
@@ -143,10 +188,6 @@
     width: 32px;
     height: 32px;
   }
-}
-
-.filter-editor__icon--active-icon {
-  fill: $red;
 }
 
 .filter-editor__icon-crop {
